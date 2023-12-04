@@ -67,7 +67,7 @@ To know more about policies files, you can read the associated documentation: [P
 - `yourEntityID` with a valid RealMe Issuer (see [RealMe request parameters](https://developers.realme.govt.nz/how-realme-works/realme-request-parameters)) in this format `https://www.agencyname.govt.nz/context/application-name`
 
 3. Update the RealMe Login SAML Metadata:
-- From the `MTS-Post-Onboarding-Bundle-2023.zip` (See previous step), open the `MTSIdPLoginSAMLMetadata.xml` file.
+- From the `MTS-Post-Onboarding-Bundle-2023.zip` (See downloaded RealMe Bundle file), open the `MTSIdPLoginSAMLMetadata.xml` file.
 - Copy the content of the file (do not copy the `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` line).
 - Open the `TrustFrameworkExtensions.xml` as paste here inside the CDATA section:
 
