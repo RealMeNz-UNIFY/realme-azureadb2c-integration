@@ -76,7 +76,7 @@ To know more about policies files, you can read the associated documentation: [P
     Add RealMe Assertion Metadata Here
     ]]>
     ```
-- To change the Assertion format to XML, replace the following lines with:
+- To change the Assertion format to XML, replace the following lines:
 
     ```
     <OutputClaim ClaimTypeReferenceId="safeB64Identity" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:igovt:IVS:Assertion:JSON:Identity" />
