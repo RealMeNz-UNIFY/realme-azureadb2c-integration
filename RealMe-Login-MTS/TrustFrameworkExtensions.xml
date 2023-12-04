@@ -26,7 +26,9 @@
             <Item Key="NameIdPolicyFormat">urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</Item>
             <Item Key="NameIdPolicyAllowCreate">true</Item>
             <Item Key="IncludeAuthnContextClassReferences">urn:nzl:govt:ict:stds:authn:deployment:GLS:SAML:2.0:ac:classes:LowStrength</Item>
-            <Item Key="PartnerEntity">https://login.mts.realme.govt.nz/4af8e0e0-497b-4f52-805c-00fa09b50c16/B2C_1A_DIA_RealMe_MTSLoginService/samlp/metadata</Item>
+            <Item Key="PartnerEntity"><![CDATA[
+              Add RealMe Login Metadata Here
+              ]]></Item>
           </Metadata>
           <CryptographicKeys>
             <Key Id="SamlMessageSigning" StorageReferenceId="B2C_1A_SamlMessageSigning" />
@@ -82,5 +84,4 @@
       <ClientDefinition ReferenceId="DefaultWeb" />
     </UserJourney>
   </UserJourneys>
-
 </TrustFrameworkPolicy>
