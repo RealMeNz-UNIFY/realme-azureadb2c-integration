@@ -89,7 +89,7 @@ To know more about policies files, you can read the associated documentation: [P
     ```
 - Save your changes.
 
-1. Upload the policies:
+4. Upload the policies:
 - On the Custom Policies page of Identity Experience Framework, select **Upload Policy**.
 - In this order, upload `TrustFrameworkBase.xml`, `TrustFrameworkExtensions.xml`, `SignUpSignInRealMeAssertion.xml`.
 
