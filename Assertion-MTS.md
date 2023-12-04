@@ -97,7 +97,7 @@ To know more about policies files, you can read the associated documentation: [P
 - Select `Low Strength` in the **Default Authentication Strength** dropdown. If you'd like to change the setting to `Moderate Strength`, you will have to update the `TrustFrameworkExtensions.xml` file. Search for **IncludeAuthnContextClassReferences** and change the value to `urn:nzl:govt:ict:stds:authn:deployment:GLS:SAML:2.0:ac:classes:ModStrength`.
 - Change **Assertion Flow** to `AssertAndLogin`.
 - Change **Reponse Format** to `XML`.
-- Make sure `Return JWT LAT Token` is checked.
+- Make sure `Return LAT (AssertAndLogin or AssertAndAlwaysLogin flows)` is checked.
 - Click **Update**.
 
 ## Testing the policy

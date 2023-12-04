@@ -95,7 +95,7 @@ To know more about policies files, you can read the associated documentation: [P
 - Update your configuration: https://mtscloud.realme.govt.nz/Login/Metadata/SelectConfig
 - Select `yourEntityID` in the **entity ID** field, and click **View**.
 - Select `Low Strength` in the **Default Authentication Strength** dropdown. If you'd like to change the setting to `Moderate Strength`, you will have to update the `TrustFrameworkExtensions.xml` file. Search for **IncludeAuthnContextClassReferences** and change the value to `urn:nzl:govt:ict:stds:authn:deployment:GLS:SAML:2.0:ac:classes:ModStrength`.
-- Make sure `Return JWT LAT Token` is not checked.
+- Make sure `Return LAT` is not checked.
 - Click **Update**.
 
 ## Testing the policy
