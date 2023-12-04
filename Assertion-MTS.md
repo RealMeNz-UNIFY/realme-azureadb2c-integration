@@ -76,9 +76,20 @@ To know more about policies files, you can read the associated documentation: [P
     Add RealMe Assertion Metadata Here
     ]]>
     ```
+- To change the Assertion format to XML, replace the following lines with:
+
+    ```
+    <OutputClaim ClaimTypeReferenceId="safeB64Identity" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:igovt:IVS:Assertion:JSON:Identity" />
+    <OutputClaim ClaimTypeReferenceId="safeB64Address" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:NZPost:AVS:Assertion:JSON:Address" />
+    ``` 
+    with these lines:
+    ```
+    <OutputClaim ClaimTypeReferenceId="safeB64Identity" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:igovt:IVS:Assertion:Identity" />
+    <OutputClaim ClaimTypeReferenceId="safeB64Address" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:NZPost:AVS:Assertion:Address" />
+    ```
 - Save your changes.
 
-4. Upload the policies:
+1. Upload the policies:
 - On the Custom Policies page of Identity Experience Framework, select **Upload Policy**.
 - In this order, upload `TrustFrameworkBase.xml`, `TrustFrameworkExtensions.xml`, `SignUpSignInRealMeAssertion.xml`.
 
@@ -96,7 +107,7 @@ To know more about policies files, you can read the associated documentation: [P
 - Select `yourEntityID` in the **entity ID** field, and click **View**.
 - Select `Low Strength` in the **Default Authentication Strength** dropdown. If you'd like to change the setting to `Moderate Strength`, you will have to update the `TrustFrameworkExtensions.xml` file. Search for **IncludeAuthnContextClassReferences** and change the value to `urn:nzl:govt:ict:stds:authn:deployment:GLS:SAML:2.0:ac:classes:ModStrength`.
 - Change **Assertion Flow** to `AssertAndLogin`.
-- Change **Reponse Format** to `XML`.
+- Change **Reponse Format** to `JSON` (Recommended as the default, otherwise select `XML` if updated Assertions in previous steps).
 - Make sure `Return LAT (AssertAndLogin or AssertAndAlwaysLogin flows)` is checked.
 - Click **Update**.
 

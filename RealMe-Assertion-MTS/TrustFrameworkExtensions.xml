@@ -66,8 +66,8 @@
           <OutputClaims>
             <OutputClaim ClaimTypeReferenceId="issuerUserId" PartnerClaimType="yourEntityID" />
             <OutputClaim ClaimTypeReferenceId="fit" PartnerClaimType="urn:nzl:govt:ict:stds:authn:attribute:igovt:IVS:FIT" />
-            <OutputClaim ClaimTypeReferenceId="safeB64Identity" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:igovt:IVS:Assertion:Identity" />
-            <OutputClaim ClaimTypeReferenceId="safeB64Address" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:NZPost:AVS:Assertion:Address" />
+            <OutputClaim ClaimTypeReferenceId="safeB64Identity" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:igovt:IVS:Assertion:JSON:Identity" />
+            <OutputClaim ClaimTypeReferenceId="safeB64Address" PartnerClaimType="urn:nzl:govt:ict:stds:authn:safeb64:attribute:NZPost:AVS:Assertion:JSON:Address" />
             <OutputClaim ClaimTypeReferenceId="lat" PartnerClaimType="logon_attributes_token" />
             <OutputClaim ClaimTypeReferenceId="identityProvider" DefaultValue="realme.govt.nz" AlwaysUseDefaultValue="true" />
             <OutputClaim ClaimTypeReferenceId="authenticationSource" DefaultValue="socialIdpAuthentication" AlwaysUseDefaultValue="true" />
