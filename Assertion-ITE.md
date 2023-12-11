@@ -14,16 +14,16 @@ Purchase two certificates:
 
 You will need to generate the metadata file before completing the ITE request.
 
-Follow the integration steps as describe for the MTS environment, but you will have to use your own cert rather than using the certificate provided by RealMe (`mts_saml_sp.p12/pfx`).
+3. Follow the integration steps as describe for the MTS environment, but you will have to use your own cert rather than using the certificate provided by RealMe (`mts_saml_sp.p12/pfx`).
 
 ## ITE Request
 
-1, Compress saved Metadata from B2C retrieved from Assertion-MTS instructions:
+4. Compress saved Metadata from B2C retrieved from Assertion-MTS instructions:
 (re: Download the B2C metadata file (replace `yourtenant` with the name of your B2C tenant):
   `https://yourtenant.b2clogin.com/yourtenant.onmicrosoft.com/B2C_1A_SignUpSignInRealMeAssertion/samlp/metadata?idptp=RealMeAssertion-SAML2`)
 
-2. Create a new ITE request on the [RealMe developers website](https://developers.realme.govt.nz/projects/):
-3. In ITE request, specify:
+5. Create a new ITE request on the [RealMe developers website](https://developers.realme.govt.nz/projects/):
+6. In ITE request, specify:
    a) Online Service integrations - Organization and project name, environment, login type (Login, Assertion or Login and Assertion) and requested integration date.
    b) SAML Service Provider configuration (for example `Azure AD B2C`) and select the zip file archive containing the Agency Metadata (extracted by the B2C SAML metadata).
    c) Complete Agency co-branding customization.
