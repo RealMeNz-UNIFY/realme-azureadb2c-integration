@@ -42,13 +42,13 @@ Follow [this tutorial](https://docs.microsoft.com/en-us/azure/active-directory-b
 
 ### Upload the certificate used between Azure AD B2C and RealMe to exchange data.
 
-1. Download the `MTS-Post-Onboarding-Bundle-2023.zip` from the [RealMe Developer Website](https://developers.realme.govt.nz/try-it-out-now/) and unzip it.
+1. Download the `Messaging Test Site bundle` from the [RealMe Developer Website](https://developers.realme.govt.nz/try-it-out-now/) and unzip it.
 2. Rename the file `mts_saml_sp.p12` to `mts_saml_sp.pfx`.
 3. Select **Policy Keys** and then select **Add**.
 4. For **Options**, choose `Upload`.
 5. In **Name**, enter `SamlMessageSigning`. The prefix B2C_1A_ will be added automatically.
 6. In **File upload**, select the `mts_saml_sp.pfx` file.
-7. In **Password**, enter the password of the certificate (you can find this information in the `readme.txt` file in the `MTS-Post-Onboarding-Bundle-2023.zip` zipped file)
+7. In **Password**, enter the password of the certificate (you can find this information in the `readme.txt` file in the `Messaging Test Site bundle` zipped file)
 8. Click **Create**.
 
 ## Customizing the Custom policies files.
@@ -67,7 +67,7 @@ To know more about policies files, you can read the associated documentation: [P
 - `yourEntityID` with a valid RealMe Issuer (see [RealMe request parameters](https://developers.realme.govt.nz/how-realme-works/realme-request-parameters)) in this format `https://www.agencyname.govt.nz/context/application-name`
 
 3. Update the RealMe Assertion SAML Metadata:
-- From the `MTS-Post-Onboarding-Bundle-2023.zip` (See downloaded RealMe Bundle file), open the `MTSIdPAssertionSAMLMetadata.xml` file.
+- From the `Messaging Test Site bundle` (See downloaded RealMe Bundle file), open the `B2C_1A_DIA_RealMe_AssertionService.xml` file.
 - Copy the content of the file (do not copy the `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` line).
 - Open the `TrustFrameworkExtensions.xml` as paste here inside the CDATA section:
 
